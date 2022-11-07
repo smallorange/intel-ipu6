@@ -10,7 +10,9 @@ Source1:        modules-load-d-intel-ipu6.conf
 
 BuildRequires:  systemd-rpm-macros
 # For kmod package
-Provides:       %{name}-kmod-common = %{version}-%{release}
+Provides:       %{name} = %{version}-%{release}
+
+Requires:       kernel(x86-64) <= 5.19.17-200.%{release}
 
 BuildArch:      noarch
 
