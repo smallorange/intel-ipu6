@@ -12,7 +12,7 @@ BuildRequires:  systemd-rpm-macros
 # For kmod package
 Provides:       %{name} = %{version}-%{release}
 
-Requires:       kernel(x86-64) <= 5.19.17-200.%{release}
+Requires:       kernel(x86-64) <= 5.19.17-200
 
 BuildArch:      noarch
 
